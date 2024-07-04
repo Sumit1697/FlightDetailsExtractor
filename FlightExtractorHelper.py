@@ -8,6 +8,7 @@ from selenium import webdriver
 import openpyxl as ox
 import requests
 
+
 data = []
 
 
