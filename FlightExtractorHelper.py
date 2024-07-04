@@ -8,6 +8,7 @@ from selenium import webdriver
 import openpyxl as ox
 import requests
 
+
 data = []
 
 
@@ -301,7 +302,7 @@ async def go_to_url_and_start_scraping(url, wait, driver):
                 select_hundred.click()
             except NoSuchElementException:
                 print(f"No able to find 100 in select element: {NoSuchElementException}")
-            driver.get("https://connect.nbaa.org/common/default.aspx?id=68&pi=25&salt=75319&ps=100")
+            driver.get("https://connect.nbaa.org/common/default.aspx?id=68&pi=65&salt=75319&ps=100")
             await scrape_date_for_people(wait, driver)
 
         else:
